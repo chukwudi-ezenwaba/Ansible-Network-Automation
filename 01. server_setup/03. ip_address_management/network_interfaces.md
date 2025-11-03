@@ -42,9 +42,9 @@
         nameservers:
             addresses: [8.8.8.8, 1.1.1.1]
 
-3. Reset interfaces.
+3. Apply configuration.
     ```bash
-    sudo nmcli connection down ens18; nmcli connection up ens18
+    sudo netplan apply
 
 4. Verify the new configuration
     ```bash
@@ -95,9 +95,9 @@
         nameservers:
             addresses: [8.8.8.8, 1.1.1.1]
 
-3. Reset interfaces.
+3. Apply configuration.
     ```bash
-    sudo nmcli connection down ens18; nmcli connection up ens18
+    sudo netplan apply
 
 4. Verify the new configuration
     ```bash
